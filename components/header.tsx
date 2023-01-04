@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="relative z-10 py-2 md:py-3 shadow-blue-400 shadow-lg">
+    <header className="relative z-10 py-2 md:py-3" style={{ border: "1px solid black" }}>
       <div className="container px-4 mx-auto sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between">
           <div className="flex-shrink-0">
@@ -67,13 +67,19 @@ export default function Header() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/YacineMessaadi/nextjs-openai"
+              href="https://github.com/mauceri/nextopenai"
               title=""
               className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
             >
               Source Code
             </a>
-
+            <a target="_blank"
+              rel="noopener noreferrer"
+              href="https://mauceri.me"
+              title="From Yacine Messaadi"
+              className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2">
+              Christian Mauceri
+            </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -81,7 +87,7 @@ export default function Header() {
               title="From Yacine Messaadi"
               className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
             >
-              Yacine Messaadi
+               after the code of  Yacine Messaadi
             </a>
           </div>
         </div>

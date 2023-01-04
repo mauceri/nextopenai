@@ -57,29 +57,23 @@ export default function Home() {
                 <div className="flex items-end">
                   <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-2 items-start">
                     <div>
-                      <span className="px-4 py-2 rounded-lg inline-block rounded-bl-none bg-gray-200 text-gray-600 text-lg">
+                      <span className="px-4 py-2 inline-block bg-gray-200 text-gray-600 text-lg">
                         {message.message}
                       </span>
                     </div>
                   </div>
-                  <span className="w-6 h-6 rounded-full order-1 ring ring-gray-800 text-center text-gray-800">
-                    AI
-                  </span>
                 </div>
               </div>
             ) : (
               <div key={index} id="user" className="chat-message">
-                <div className="flex items-end justify-end">
+                <div className="flex items-end ">
                   <div className="flex flex-col space-y-2 text-xs max-w-xs mx-2 order-1 items-end">
                     <div>
-                      <span className="px-4 py-2 rounded-lg inline-block rounded-br-none bg-blue-600 text-white text-lg">
+                      <span className="px-4 py-2 inline-block bg-blue-400 text-white text-lg">
                         {message.message}
                       </span>
                     </div>
                   </div>
-                  <span className="w-6 h-6 rounded-full order-2 ring ring-blue-800 text-center text-blue-800">
-                    Y
-                  </span>
                 </div>
               </div>
             );
