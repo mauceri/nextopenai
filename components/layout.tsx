@@ -1,11 +1,7 @@
 import Head from "next/head";
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-  home?: boolean;
-}) {
+export default function Layout({children}: {children: React.ReactNode;home?: boolean;}) 
+{
   const siteTitle = "NextJS + OpenAI Chat";
   return (
     <div className="">
@@ -18,5 +14,5 @@ export default function Layout({
 
       <main>{children}</main>
     </div>
-  );
+  )
 }
