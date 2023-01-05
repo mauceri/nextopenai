@@ -4,14 +4,13 @@ export default function Layout({children}: {children: React.ReactNode;home?: boo
 {
   const siteTitle = "NextJS + OpenAI Chat";
   return (
-    <div className="">
+    <div className="head">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <title>{siteTitle}</title>
         <meta name="description" content="Next.js + OpenAI Chat" />
         <meta name="og:title" content={siteTitle} />
       </Head>
-
       <main>{children}</main>
     </div>
   )
