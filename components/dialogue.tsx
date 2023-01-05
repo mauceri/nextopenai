@@ -8,7 +8,7 @@ export default function Dialogue() {
     const [message, setMessage] = useState("");
     const [messages, setMessages] = useState([
       {
-        message: "Hi, I'm your virtual assistant ! What can I do for you ?",
+        message: "Bonjour, Je suis votre assistant virtuel ! Que puis-je faire pour vous ?",
         from: "ai",
       },
     ]);

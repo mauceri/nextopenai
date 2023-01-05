@@ -11,17 +11,17 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const completion = await openai.createCompletion({
-    model: "text-davinci-002",
+    model: "text-davinci-003",
     prompt:
-      "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?\nAI: I am an AI created by OpenAI. How can I help you today?\nHuman: " +
+      "Voici une conversation avec un assistant basé sur une IA. Cet assistant est utile, creatif, malin, et très amical.\n\nHumain: Bonjout, comment allez-vous ?\nIA: Je suis une IA créée par OpenAI. Comment puis-je vous aider ?\nHumain: " +
       req.body.message +
-      "\nAI: ",
+      "\nIA: ",
     temperature: 0.7,
     max_tokens: 200,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0.6,
-    stop: ["Human: ", "AI: "],
+    stop: ["Humain: ", "IA: "],
   });
   if (completion.statusText === "OK") {
     res.status(200).json({ message: completion.data.choices[0].text });
